@@ -20,10 +20,10 @@
       }
       
       $sorted_asc = sort_2way($nums, 'asc');
-      echo "昇順ソートにソートします。<br>" . implode("<br>", $sorted_asc) . "<br>";
+      echo "昇順にソートします。<br>" . implode("<br>", $sorted_asc) . "<br>";
       
       $sorted_desc = sort_2way($nums, 'desc');
-      echo "降順ソートにソートします。<br> " . implode("<br>", $sorted_desc);
+      echo "降順にソートします。<br> " . implode("<br>", $sorted_desc);
         ?>
     </p>
 </body>
