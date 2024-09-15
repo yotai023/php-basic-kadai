@@ -14,10 +14,16 @@
         function sort_2way($array, $order = 'asc') {
             if ($order === 'asc') {
                 sort($array); 
-                echo "昇順にソートします。<br>" . implode("<br>", $array) . "<br>";
+                echo "昇順にソートします。<br>";
+                foreach ($array as $num) {
+                    echo $num . "<br>";
+                }
             } elseif ($order === 'desc') {
                 rsort($array); 
-                echo "降順にソートします。<br>" . implode("<br>", $array) . "<br>";
+                echo "降順にソートします。<br>";
+                foreach ($array as $num) {
+                    echo $num . "<br>";
+                }
             }
         }
 
