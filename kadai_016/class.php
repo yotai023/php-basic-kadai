@@ -25,6 +25,10 @@
             public function getPrice() {
                 return $this->price;
             }
+
+            public function show_price() {
+                echo $this->price . "<br>";
+            }
         }
 
         class Animal {
@@ -49,17 +53,20 @@
             public function getWeight() {
                 return $this->weight;
             }
+
+            public function show_height() {
+                echo $this->height . "<br>";
+            }
         }
 
         $food = new Food('potato', 250);
-
         $animal = new Animal('dog', 60, 5000);
 
         echo "Food Object ( {name:Food:private} => " . $food->getName() . " {price:Food:private} => " . $food->getPrice() . " )<br>";
         echo "Animal Object ( {name:Animal:private} => " . $animal->getName() . " {height:Animal:private} => " . $animal->getHeight() . " {weight:Animal:private} => " . $animal->getWeight() . " )<br>";
 
-        echo $food->getPrice() . "<br>";
-        echo $animal->getHeight();
+        $food->show_price();
+        $animal->show_height();
         ?>
     </p>
 </body>
